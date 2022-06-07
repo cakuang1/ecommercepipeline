@@ -1,32 +1,20 @@
 # ecommercepipeline
-Project made to learn about AWS tools and overall ETL process, and getting started in data engineering. Extract from data source, transform data, then load into some query-able data warehouse. 
+# Motivation
+Create a sucessful real-time data streaming pipeline that would help me learn data streaming platforms such as Apache Kafka and Spark.
 
 
-
-# ARCHITECTURE
 
 # GENERAL OVERVIEW
-Purpose
--Learn general concepts of data engineering without spending a dime because paying for cloud services sucks.
 
+Since our main purpose is to learn in this project and acesss to streaming APIs are often limited, I decided to make my own data generator that produces JSON files in order to act as data vendors. We push this data into kafka topics, and our consumer (Spark Streaminng) applies transformations. This transformed data is then put into our database and then analyzed using our dashboard.
 
-
-Since our main purpose is to learn in this project, we want to imagine grabbing data from some vendor that is in some format we don't want. We create a few data generators that act as data sources, and I have purposely made these sources output csv files that are not yet formatted the way we want to. We transform these csv files and store them into our warehouse. Then we create sql scripts in order to create our dashboard.
-
-
+# ARCHITECTURE
+![Untitled presentation](https://user-images.githubusercontent.com/70300980/172266644-dc1a4d13-e18b-4f8c-8ef2-370c82bc22f8.png)
 
 # DATABASE DESIGN
 
 
 ![Database ER diagram (crow's foot)](https://user-images.githubusercontent.com/70300980/171524814-20ed47c1-861c-484a-92df-08be518b9349.png)
-
-
-
-# TAKE-AWAYS
-
-- , and I wanted to learn skills
-- 
-
 
 
 
